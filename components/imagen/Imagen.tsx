@@ -1,14 +1,14 @@
 // components/ImageComponent.tsx
-import React from 'react';
 
-const ImageComponent: React.FC = () => {
+import Image from 'next/image'
+
+export default function Imagen() {
     return (
-        <div className="flex justify-center items-center min-h-screen">
-            
-            <img src="/public/images/compas.jpg" alt="Example" className=" w-full max-w-md" />
-        </div>
-    );
-};
-
-export default ImageComponent;
-
+        <Image
+            src="/meme.jpg"
+            width={500}
+            height={500}
+            alt="Picture of the author"
+        />
+    )
+}

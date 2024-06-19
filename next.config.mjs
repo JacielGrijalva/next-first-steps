@@ -1,5 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'www.comoves.unam.mx'
+            }
+        ]
+    }
+};
 
 export default nextConfig;
 
